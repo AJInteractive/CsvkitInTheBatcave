@@ -3,7 +3,7 @@
 csvkit is a tool to convert, examine and work with (large) csv files. It removes the need to use Excel. Not only is csvkit faster because it uses the terminal, it can also handle a lot bigger csv files than Excel is capable of.
 
 
-Read "How to be a Terminal Pro" to get to know the basics of the Terminal (https://github.com/ AJInteractive/terminalpro).
+Read "How to be a Terminal Pro" to get to know the basics of the Terminal (https://github.com/AJInteractive/terminalpro).
 
 Most of the csvkit stuff is based on simple terminal commands, with some specific commands which are listed below
 
