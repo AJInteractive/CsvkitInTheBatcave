@@ -38,6 +38,7 @@ Remember that you can pipe together different commands using the | command, so f
 
 1. csvcut -c [ColumnName],[ColumnName2],[ColumnName3] [filename.csv] | csvstat --> will cut the three specified columns from [filename.csv] and do a csvstat on these three columns only
 2. csvcut -c [ColumnName],[ColumnName2],[ColumnName3] [filename.csv] | csvlook | head --> will cut the three specified columns from [filename.csv] and present the first ten lines (head) in the terminal using csvlook
+3. csvgrep -c 5 -m "[SearchQuery]" -i [filename].csv | csvcut -c 1,2,3,4,7,8,9 >[newfilname.csv] --> This will look for rows that DON'T have [Searchquery] in column 5 of [filename.csv]. Because of the -i flag (-i stands for inverse) csvgrep looks for all rows that don't have [SearchQuery] in column 5 will be selected.  Piping it into csvcut it will take columns 1,2,3,4,7,8,9 of the rows NOT containing [SearchQuery] and put these into [newfilename.csv]   
 
 Next level things:
 
